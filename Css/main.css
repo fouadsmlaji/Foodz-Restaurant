@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.Hero{
+    background-image: url('../Images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.res-img-div{
+    height: 550px;
+}
+
+.res-img, .card{
+    border-radius: 70px 0 70px 0;
+}
+
+.small-div, .card2{
+    border-radius: 0 70px 0 70px ;
+}
+
+.Menu{
+    background-image: url('../Images/bg4.jpg');
+    background-size: cover;
+}
+
+.swiper-slide {
+    flex-shrink: 0; /* Ensure swiper slides do not shrink */
+      width: 280px; /* Set width of each swiper slide */
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+   
+  }
+
+  .swiper-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #scroller, #scroller2{
+    background-color: rgba(228, 228, 228, 0.5);
+  }
+
+
+
+
+  @media only screen and (max-width: 1000px) {
+    
+    .Hero{
+        background-size: cover;
+    }
+  }
+
+  .scrolling-text-wrapper{
+
+    overflow: hidden;
+    margin: 40px 40px;
+    
+  }
+ .scrolling-text{
+    width: 200%;
+    animation-name: textScroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+}
+
+@keyframes  textScroll {
+    from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+}

@@ -1,0 +1,1068 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Css/main.css" />
+ 
+
+    <!-- logo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+
+  <body>
+    <!-- Header section -->
+    <header>
+      <nav class="bg-white border-gray-200 fixed w-full z-40">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <span
+            class="self-center text-5xl font-semibold whitespace-nowrap text-gray-800"
+            >FOODz <span class="text-xl">🇮🇹</span>
+          </span>
+          <button
+            id="nav-toggle"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="nav-content">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 gap-2 border-2 lg:border-0 md:border-0 items-center"
+            >
+              <li>
+                <button
+                  href="#"
+                  class="block py-2 px-6 text-black bg-white md:black md:p-0 border-2 border-white hover:border-b-red-500 transition ease-in-out duration-500"
+                  aria-current="page"
+                  onclick="scrollfunction('home')"
+                >
+                  Home
+                </button>
+              </li>
+              <li>
+                <button
+                  href="#"
+                  class="block py-2 px-6 text-gray-900 md:p-0 border-2 border-white hover:border-b-green-500 transition ease-in-out duration-500"
+                  onclick="scrollfunction('Menu')"
+                >
+                  Menu
+                </button>
+              </li>
+              <li>
+                <button
+                  href="#"
+                  class="block py-2 px-6 text-gray-900 md:p-0 border-2 border-white hover:border-b-red-500 transition ease-in-out duration-500"
+                  onclick="scrollfunction('pizza')"
+                >
+                  Italian
+                </button>
+              </li>
+              <li>
+                <button
+                  href="#"
+                  class="block py-2 px-6 text-gray-900 md:p-0 border-2 border-white hover:border-b-green-500 transition ease-in-out duration-500"
+                  onclick="scrollfunction('contact')"
+                >
+                  Contact us
+                </button>
+              </li>
+              <li>
+                <button onclick="scrollfunction('contact')"
+                  class="lg:hidden md:hidden justify-center items-center px-4 py-2 bg-green-500 border-2 border-green-700 hover:bg-white hover:border-black transition ease-in-out duration-500"
+                >
+                  book a table
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:flex hidden">
+            <button onclick="scrollfunction('contact')"
+              class="justify-center items-center px-6 py-2 bg-green-500 border-2 border-green-700 hover:bg-white hover:border-black transition ease-in-out duration-500"
+            >
+              book a table
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex flex-col ">
+      <!-- Hero section -->
+      <div id="home"
+        class="Hero flex lg:flex-row flex-col lg:h-screen h-full w-full justify-between lg:pt-20 md:pt-20 pt-28"
+      >
+        <div class="flex lg:hidden justify-center relative">
+          <img
+            src="./Images/res1.jpg"
+            alt=""
+            class="res-img border-2 border-zinc-700 h-96"
+            id="my-img"
+          />
+          <div
+            class="plate md:flex hidden rounded-full h-40 w-40 absolute mr-80 bottom-4 shadow-2xl shadow-black"
+          >
+            <img
+              src="./Images/pizza2.png"
+              alt=""
+              class="object-contain"
+              id="dish-photo"
+            />
+          </div>
+          <button onclick="scrollfunction('pizza')"
+            class="flex small-div md:flex hidden absolute bg-white h-36 w-36 bottom-48 ml-80 border-2 border-black justify-center items-center hover:bg-red-500 hover:text-white transition ease-in-out duration-500 text-2xl font-semibold text-red-500"
+          >
+            Made in Italy
+          </button>
+        </div>
+
+        <div
+          class="flex justify-center items-center flex-col lg:gap-10 md:gap-10 gap-8 flex-1 lg:pt-0 pt-10"
+        >
+          <h1
+            class="lg:text-5xl md:text-5xl text-4xl max-w-md text-green-500 font-semibold text-center lg:text-start"
+          >
+            An Ambient Dining Experience
+          </h1>
+          <p class="max-w-md lg:px-0 px-4 text-center lg:text-start">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis perferendis nobis culpa. Consequuntur perspiciatis
+            expedita modi nostrum vero tenetur accusantium. 🍕
+          </p>
+
+          <div class="flex flex-row justify-center items-center gap-6">
+            <button onclick="scrollfunction('contact')"
+              class="justify-center items-center bg-red-500 text-white px-6 py-2 border-2 border-red-700 hover:bg-white hover:border-black transition ease-in-out duration-500"
+            >
+              Order Now!
+            </button>
+            <button onclick="scrollfunction('Menu')"
+              class="justify-center items-center bg-green-500 px-10 py-2 border-2 border-green-700 hover:bg-white hover:border-black transition ease-in-out duration-500"
+            >
+              Menu
+            </button>
+          </div>
+        </div>
+        <div class="lg:flex hidden justify-center items-center flex-1">
+          <div class="res-img-div flex justify-center relative">
+            <img
+              src="./Images/res1.jpg"
+              alt=""
+              class="res-img border-2 border-zinc-700 w-80"
+              id="my-img"
+            />
+            <div
+              class="plate flex rounded-full h-48 w-48 absolute mr-96 bottom-16 shadow-2xl shadow-black"
+            >
+              <img
+                src="./Images/pizza2.png"
+                alt=""
+                class="object-contain"
+                id="dish-photo"
+              />
+            </div>
+            <button onclick="scrollfunction('pizza')"
+              class="flex small-div absolute bg-white h-44 w-44 bottom-16 ml-96 border-2 border-black justify-center items-center hover:bg-red-500 hover:text-white transition ease-in-out duration-500 text-2xl font-semibold text-red-500"
+            >
+             Made in Italy
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu section -->
+      <div id="Menu" class="Menu flex flex-col bg-gray-100 justify-center w-full h-full">
+        <div
+          class="flex lg:flex-row md:flex-row flex-col justify-between items-center w-full py-20 lg:gap-0 md:gap-0 gap-10"
+        >
+          <div class="main-dish flex flex-1 justify-center">
+            <img
+              src="./Images/pizza1.png"
+              alt=""
+              class="lg:h-96 md:h-96 h-80"
+            />
+          </div>
+          <div class="flex flex-col flex-1 gap-10">
+            <h2
+              class="lg:text-5xl md:text-5xl text-4xl font-semibold lg:text-start md:text-start text-center lg:px-0 md:px-0 px-4 max-w-lg"
+            >
+              THE FINEST
+              <div class="inline-block">
+                <ul class="flex lg:bg-white ">
+                  <li
+                    class="lg:text-5xl md:text-5xl text-4xl text-green-500 font-semibold"
+                    style="-webkit-text-stroke: 2px rgb(14, 167, 0)"
+                  >
+                    P
+                  </li>
+                  <li
+                    class="lg:text-5xl md:text-5xl text-4xl text-green-500 font-semibold"
+                    style="-webkit-text-stroke: 2px rgb(14, 167, 0)"
+                  >
+                    I
+                  </li>
+                  <li
+                    class="lg:text-5xl md:text-5xl text-4xl text-white font-semibold drop-shadow-2xl"
+                    style="-webkit-text-stroke: 2px rgb(119, 119, 119)"
+                  >
+                    Z
+                  </li>
+                  <li
+                    class="lg:text-5xl md:text-5xl text-4xl text-red-500 font-semibold"
+                    style="-webkit-text-stroke: 2px rgb(249, 62, 62)"
+                  >
+                    Z
+                  </li>
+                  <li
+                    class="lg:text-5xl md:text-5xl text-4xl text-red-500 font-semibold"
+                    style="-webkit-text-stroke: 2px rgb(249, 62, 62)"
+                  >
+                    A
+                  </li>
+                </ul>
+              </div>
+              YOU WILL EVER TASTE
+            </h2>
+
+            <p
+              class="max-w-md lg:text-start md:text-start text-center lg:mx-0 mx-auto px-2 lg:px-0 md:px-0"
+            >
+              <span class="lg:bg-transparent md:bg-transparent bg-white"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet enim eaque aut itaque dicta hic. Nam animi modi facilis
+                hic?</span
+              >
+            </p>
+            <div class="flex lg:mx-0 md:mx-0 mx-auto">
+              <button
+                class="justify-center items-center px-6 py-2 bg-red-500 text-white border-2 border-red-700 hover:bg-white hover:border-black transition ease-in-out duration-500 hover:text-black"
+              >
+                Order now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- scroller -->
+
+        <div class="scrolling-text-wrapper" id="pizza">
+          <div class="scrolling-text">
+            <span
+              class="text-green-500 font-semibold text-6xl"
+              style="-webkit-text-stroke: 2px rgb(14, 167, 0)"
+              >PIZZA PIZZA PIZZA
+            </span>
+            <span
+              class="text-white font-semibold text-6xl"
+              style="-webkit-text-stroke: 2px rgb(174, 174, 174)"
+              >PIZZA PIZZA PIZZA
+            </span>
+            <span
+              class="text-red-500 font-semibold text-6xl"
+              style="-webkit-text-stroke: 2px rgb(249, 62, 62)"
+              >PIZZA PIZZA PIZZA
+            </span>
+            <span
+              class="text-green-500 font-semibold text-6xl"
+              style="-webkit-text-stroke: 2px rgb(14, 167, 0)"
+              >PIZZA PIZZA PIZZA
+            </span>
+            <span
+              class="text-white font-semibold text-6xl"
+              style="-webkit-text-stroke: 2px rgb(174, 174, 174)"
+              >PIZZA PIZZA PIZZA
+            </span>
+            <span
+              class="text-red-500 font-semibold text-6xl"
+              style="-webkit-text-stroke: 2px rgb(249, 62, 62)"
+              >PIZZA PIZZA PIZZA </span
+            ><span
+              class="text-green-500 font-semibold text-6xl"
+              style="-webkit-text-stroke: 2px rgb(14, 167, 0)"
+              >PIZZA PIZZA PIZZA
+            </span>
+            <span
+              class="text-white font-semibold text-6xl"
+              style="-webkit-text-stroke: 2px rgb(174, 174, 174)"
+              >PIZZA PIZZA PIZZA
+            </span>
+            <span
+              class="text-red-500 font-semibold text-6xl"
+              style="-webkit-text-stroke: 2px rgb(249, 62, 62)"
+              >PIZZA PIZZA PIZZA </span
+            ><span
+              class="text-green-500 font-semibold text-6xl"
+              style="-webkit-text-stroke: 2px rgb(14, 167, 0)"
+              >PIZZA PIZZA PIZZA
+            </span>
+            <span
+              class="text-white font-semibold text-6xl"
+              style="-webkit-text-stroke: 2px rgb(174, 174, 174)"
+              >PIZZA PIZZA PIZZA
+            </span>
+            <span
+              class="text-red-500 font-semibold text-6xl"
+              style="-webkit-text-stroke: 2px rgb(249, 62, 62)"
+              >PIZZA PIZZA PIZZA
+            </span>
+          </div>
+        </div>
+
+        <div class="lg:flex md:flex hidden py-2">
+          <span
+            id="right-arrow "
+            class="text-2xl ml-10 cursor-pointer bg-white border-2 border-black flex px-6 py-1 transition ease-in-out duration-500"
+            onclick="scrollRight()"
+            >swipe →
+          </span>
+        </div>
+
+        <!-- Scroller container -->
+        <div
+          class="overflow-x-auto whitespace-nowrap my-0 px-10 py-4 relative lg:mt-0 md:mt-0 mt-10"
+          id="scroller"
+        >
+          <div 
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+          >
+            <img
+              src="./Images/pizza3.png"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+              id="dish-photo"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+                Pizza lorem
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                Italian Pizza
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $5.90
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+          >
+            <img
+              src="./Images/pizza2.png"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+              id="dish-photo"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+                Pizza lorem
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                Italian Pizza
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $9.90
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+          >
+            <img
+              src="./Images/pizza1.png"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+              id="dish-photo"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+                Pizza lorem
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                Italian Pizza
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $7.90
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+          >
+            <img
+              src="./Images/pizza3.png"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+              id="dish-photo"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+                Pizza lorem
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                Italian Pizza
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $5.90
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+          >
+            <img
+              src="./Images/pizza2.png"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+              id="dish-photo"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+                Pizza lorem
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                Italian Pizza
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $4.90
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+          >
+            <img
+              src="./Images/pizza1.png"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+              id="dish-photo"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+                Pizza lorem
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                Italian Pizza
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $3.90
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+          >
+            <img
+              src="./Images/pizza3.png"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+              id="dish-photo"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+                Pizza lorem
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                Italian Pizza
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $4.90
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-4"
+          >
+            <img
+              src="./Images/pizza2.png"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+              id="dish-photo"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+                Pizza lorem
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                Italian Pizza
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $5.90
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- scroller2 -->
+        <div class="scrolling-text-wrapper pt-10">
+          <div class="scrolling-text">
+            <span>
+              <span
+                class="font-semibold text-6xl text-orange-300 mr-4"
+                style="-webkit-text-stroke: 2px rgb(204, 159, 100)"
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl text-green-500 mr-4"
+                style="-webkit-text-stroke: 2px rgb(14, 167, 0)"
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl text-red-500 mr-4"
+                style="-webkit-text-stroke: 2px rgb(249, 62, 62)"
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl text-yellow-300 mr-4"
+                style="-webkit-text-stroke: 2px rgb(249, 211, 62)"
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl"
+                style="
+                  -webkit-text-stroke: 2px rgb(77, 57, 42);
+                  color: rgb(91, 74, 61);
+                "
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl text-orange-300 mr-4"
+                style="-webkit-text-stroke: 2px rgb(204, 159, 100)"
+                >Sandwiches</span
+              >
+            </span>
+            <span>
+              <span
+                class="font-semibold text-6xl text-orange-300 mr-4"
+                style="-webkit-text-stroke: 2px rgb(204, 159, 100)"
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl text-green-500 mr-4"
+                style="-webkit-text-stroke: 2px rgb(14, 167, 0)"
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl text-red-500 mr-4"
+                style="-webkit-text-stroke: 2px rgb(249, 62, 62)"
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl text-yellow-300 mr-4"
+                style="-webkit-text-stroke: 2px rgb(249, 211, 62)"
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl"
+                style="
+                  -webkit-text-stroke: 2px rgb(77, 57, 42);
+                  color: rgb(91, 74, 61);
+                "
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl text-orange-300 mr-4"
+                style="-webkit-text-stroke: 2px rgb(204, 159, 100)"
+                >Sandwiches</span
+              >
+            </span>
+            <span>
+              <span
+                class="font-semibold text-6xl text-orange-300 mr-4"
+                style="-webkit-text-stroke: 2px rgb(204, 159, 100)"
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl text-green-500 mr-4"
+                style="-webkit-text-stroke: 2px rgb(14, 167, 0)"
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl text-red-500 mr-4"
+                style="-webkit-text-stroke: 2px rgb(249, 62, 62)"
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl text-yellow-300 mr-4"
+                style="-webkit-text-stroke: 2px rgb(249, 211, 62)"
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl mr-4"
+                style="
+                  -webkit-text-stroke: 2px rgb(77, 57, 42);
+                  color: rgb(91, 74, 61);
+                "
+                >Sandwiches</span
+              >
+              <span
+                class="font-semibold text-6xl text-orange-300"
+                style="-webkit-text-stroke: 2px rgb(204, 159, 100)"
+                >Sandwiches</span
+              >
+            </span>
+          </div>
+        </div>
+
+        <div class="flex py-4 lg:flex md:flex hidden">
+          <span
+            id="right-arrow"
+            class="text-2xl ml-10 cursor-pointer flex bg-white border-2 border-black flex px-6 py-1"
+            onclick="scrollRight2()"
+            >swipe →
+          </span>
+        </div>
+
+        <!-- Scroller container2 -->
+        <div
+          class="overflow-x-auto whitespace-nowrap my-0 px-10 py-4 relative lg:mt-0 md:mt-0 mt-10"
+          id="scroller2"
+        >
+          <div
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+          >
+            <img
+              src="./Images/S1.jpg"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+                lorem ipsum
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+              lorem ipsum
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $5.90
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+          >
+            <img
+              src="https://www.shutterstock.com/image-photo/perfect-hamburger-classic-burger-american-600nw-314203595.jpg"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+              lorem ipsum
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+              lorem ipsum
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $9.90
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+          >
+            <img
+              src="https://img.freepik.com/premium-photo/veggie-burger-with-white-background-high-quality-ul_889056-17615.jpg"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+              lorem ipsum
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+              lorem ipsum
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $7.90
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+          >
+            <img
+              src="https://as1.ftcdn.net/v2/jpg/06/14/24/08/1000_F_614240849_2Asj9iswXGH2bAMTcubXG3kK8JY6KuTX.jpg"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+              lorem ipsum
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+              lorem ipsum
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $5.90
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+          >
+            <img
+              src="https://img.freepik.com/premium-photo/healthy-chicken-shawarma-white-background_1005327-674.jpg"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+              lorem ipsum
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+              lorem ipsum
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $4.90
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+          >
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/033/502/552/small_2x/a-delicious-burito-in-isolated-white-background-ai-generative-photo.jpg"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+              lorem ipsum
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+              lorem ipsum
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $3.90
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+          >
+            <img
+              src="https://as2.ftcdn.net/v2/jpg/02/40/94/21/1000_F_240942173_udFeGFE8kWgkDuNeRG2YkzM5m7mUfwZP.jpg"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+              lorem ipsum
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+              lorem ipsum
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $4.90
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-4"
+          >
+            <img
+              src="https://s3.envato.com/files/479608824/01%20(111).jpg"
+              alt=""
+              class="mx-auto w-48 h-48 object-cover rounded-lg"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg md:text-xl font-bold mb-2 text-left text-center"
+              >
+              lorem ipsum
+              </h3>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+              lorem ipsum
+              </p>
+              <p
+                class="text-sm md:text-base text-gray-600 text-left text-center"
+              >
+                $5.90
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu section ended -->
+      </div>
+
+      <!-- contact Us -->
+      <div class="container3 flex h-full  justify-center " id="contact" >
+        <div class="burger flex flex-col w-full  h-full pt-20 " style=" height: 700px; background-image: url('Images/italy.jpg'); background-size: cover;">
+  
+          <div class="flex justify-center items pt-8 text-center">
+            <h3 class="lg:text-8xl md:text-8xl text-7xl font-bold text-black drop-shadow-2xl ">Contact Us 🇮🇹</h3>
+          </div>
+  
+          <div class="flex lg:flex-row md:flex-row flex-col items-center py-4 lg:gap-20 md:gap-20  h-full px-4 justify-center ">
+            <div class="flex items-center flex-col ">
+              <h4 class="lg:text-4xl text-3xl text-black mr-auto font-bold">Order your food now!</h4>
+              <p class="max-w-96 lg:py-8 md:py-8 py-4 text-black lg:text-xl text-lg font-semibold "> What are you waiting for? Your meal is ready for you! </p>
+              <div class="flex flex-col mr-auto gap-2  ">
+               <div class="flex flex-row items-center gap-6">
+                  <div class="flex h-16 w-16 rounded-full bg-green-500 shadow-2xl justify-center items-center hover:bg-green-300 transition ease-in-out duration-500 cursor-pointer border-2 border-black ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"/><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2M15 7a2 2 0 0 1 2 2M15 3a6 6 0 0 1 6 6"/></svg>
+                  </div>
+                 <p class="text-lg text-black font-semibold">+39 23420349</p>
+               </div>
+               <div class="flex flex-row items-center gap-6 ">
+                  <div class="flex h-16 w-16 rounded-full bg-white shadow-2xl justify-center items-center hover:bg-zinc-200 transition ease-in-out duration-500 cursor-pointer border-2 border-black">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="icon icon-tabler icon-tabler-mail" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"/><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/><path d="m3 7 9 6 9-6"/></svg>
+                  </div>
+                <p class="text-lg text-black font-semibold">Fouad.smlaji66@gmail.com</p>
+               </div>
+               <div class="flex flex-row items-center gap-6">
+                  <div class="flex h-16 w-16 rounded-full bg-red-500 shadow-2xl justify-center items-center hover:bg-red-300 transition ease-in-out duration-500 cursor-pointer border-2 border-black">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="icon icon-tabler icon-tabler-current-location" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"/><path d="M9 12a3 3 0 1 0 6 0 3 3 0 1 0-6 0"/><path d="M4 12a8 8 0 1 0 16 0 8 8 0 1 0-16 0M12 2v2M12 20v2M20 12h2M2 12h2"/></svg>
+                  </div>
+                <p class="text-lg text-black font-semibold">Milano, Italy</p>
+              </div>
+            </div>
+          </div>
+  
+          
+        </div>
+  
+        <div class="flex lg:flex-row flex-col justify-center lg:h-28 lg:gap-80 gap-6   ">
+          
+  
+          <div class="flex justify-center items-center lg:pl-20 ">
+            <span class="text-black whitespace-nowrap">2024 - FOODz, All rights reserved</span>
+          </div>
+  
+          <div class="flex flex-row justify-center items-center gap-6 lg:ml-auto mr-6">
+            <a href="https://www.facebook.com/fouad.smlaji" class="flex lg:h-16 lg:w-16 h-10 w-10 rounded-full bg-white shadow-2xl justify-center items-center hover:bg-zinc-400 transition ease-in-out duration-500 border-2 border-black">
+              <i class="fa fa-facebook text-xl "></i>
+            </a>
+            <a href="https://www.instagram.com/fouad_smlaji?igsh=andpZjc1ZWppenl3&utm_source=qr" class="flex lg:h-16 lg:w-16 h-10 w-10 rounded-full bg-white shadow-2xl justify-center items-center hover:bg-zinc-400 transition ease-in-out duration-500 border-2 border-black">
+              <i class="fa fa-instagram text-xl"></i>
+            </a>
+            <a href="www.linkedin.com/in/fouad-smlaji-a777021b6"  class="flex lg:h-16 lg:w-16 h-10 w-10 rounded-full bg-white shadow-2xl justify-center items-center hover:bg-zinc-400 transition ease-in-out duration-500 border-2 border-black">
+              <i class="fa fa-linkedin-square text-xl"></i>
+            </a>
+          </div>
+        </div>
+  
+        </div>
+      </div>
+  </div> 
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Include Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+
+    
+      document.getElementById("nav-toggle").onclick = function () {
+        document.getElementById("nav-content").classList.toggle("hidden");
+      };
+
+      function scrollfunction(id) {
+        const element = document.getElementById(id);
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      function rotateDishPhotosOnScroll() {
+        const dishPhotos = document.querySelectorAll("#dish-photo");
+
+        dishPhotos.forEach((dishPhoto) => {
+          const scrollY = window.scrollY || window.pageYOffset;
+          const rotationAngle = scrollY * 0.2;
+
+          dishPhoto.style.transform = `rotate(${rotationAngle}deg)`;
+        });
+      }
+
+      window.onscroll = function () {
+        rotateDishPhotosOnScroll();
+      };
+
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true, // Enable loop mode (optional)
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      let scrollPosition = 0;
+      const cardWidth = 400; // Adjust this according to your card width
+
+      function scrollRight() {
+        const scroller = document.getElementById("scroller");
+        if (scroller) {
+          const maxScroll = scroller.scrollWidth - scroller.clientWidth;
+          scrollPosition += cardWidth;
+          if (scrollPosition > maxScroll) {
+            scrollPosition = 0; // Reset to beginning if end is reached
+          }
+          scroller.scrollTo({
+            top: 0,
+            left: scrollPosition,
+            behavior: "smooth",
+          });
+        } else {
+          console.error("Scroller element not found!");
+        }
+      }
+
+      function scrollRight2() {
+        const scroller = document.getElementById("scroller2");
+        if (scroller) {
+          const maxScroll = scroller.scrollWidth - scroller.clientWidth;
+          scrollPosition += cardWidth;
+          if (scrollPosition > maxScroll) {
+            scrollPosition = 0; // Reset to beginning if end is reached
+          }
+          scroller.scrollTo({
+            top: 0,
+            left: scrollPosition,
+            behavior: "smooth",
+          });
+        } else {
+          console.error("Scroller element not found!");
+        }
+      }
+    </script>
+  </body>
+</html>
