@@ -16,6 +16,7 @@
 
 .res-img, .card{
     border-radius: 70px 0 70px 0;
+    
 }
 
 .small-div, .card2{
@@ -62,7 +63,9 @@
   .scrolling-text-wrapper{
 
     overflow: hidden;
-    margin: 40px 40px;
+   margin-left: 40px;
+   margin-right: 40px;
+   margin-block: 40px;
     
   }
  .scrolling-text{
@@ -82,3 +85,4 @@
         transform: translateX(-100%);
       }
 }
+

@@ -27,9 +27,16 @@
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
-          <span
-            class="self-center text-5xl font-semibold whitespace-nowrap text-gray-800"
-            >FOODz <span class="text-xl">🇮🇹</span>
+        <span class="self-center text-5xl font-semibold whitespace-nowrap text-gray-800 pl-4 flex items-center">
+          FOODz
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="20" height="15" class="ml-2">
+            <rect width="100" height="200" x="0" y="0" fill="#008C45" rx="15"/>
+            <rect width="100" height="200" x="100" y="0" fill="#F4F5F0" rx="15"/>
+            <rect width="100" height="200" x="200" y="0" fill="#CD212A" rx="15"/>
+          </svg>
+        </span>
+        
+            
           </span>
           <button
             id="nav-toggle"
@@ -49,7 +56,7 @@
               <path
                 stroke="currentColor"
                 stroke-linecap="round"
-                stroke-linejoin="round"
+                stroke-linejoin="round
                 stroke-width="2"
                 d="M1 1h15M1 7h15M1 13h15"
               />
@@ -98,7 +105,7 @@
               </li>
               <li>
                 <button onclick="scrollfunction('contact')"
-                  class="lg:hidden md:hidden justify-center items-center px-4 py-2 bg-green-500 border-2 border-green-700 hover:bg-white hover:border-black transition ease-in-out duration-500"
+                  class="lg:hidden md:hidden justify-center items-center px-4 py-2 bg-green-500 border-2 border-green-700 hover:bg-white hover:border-black transition ease-in-out duration-500 "
                 >
                   book a table
                 </button>
@@ -106,9 +113,9 @@
             </ul>
           </div>
 
-          <div class="lg:flex hidden">
+          <div class="lg:flex hidden mr-20">
             <button onclick="scrollfunction('contact')"
-              class="justify-center items-center px-6 py-2 bg-green-500 border-2 border-green-700 hover:bg-white hover:border-black transition ease-in-out duration-500"
+              class="justify-center items-center px-6 py-2 bg-green-500 border-2 border-green-700 hover:bg-white hover:border-black transition ease-in-out duration-500 "
             >
               book a table
             </button>
@@ -116,6 +123,8 @@
         </div>
       </nav>
     </header>
+
+    
 
     <main class="flex flex-col ">
       <!-- Hero section -->
@@ -205,7 +214,7 @@
         <div
           class="flex lg:flex-row md:flex-row flex-col justify-between items-center w-full py-20 lg:gap-0 md:gap-0 gap-10"
         >
-          <div class="main-dish flex flex-1 justify-center">
+          <div class="main-dish flex flex-1 justify-center lg:pr-40">
             <img
               src="./Images/pizza1.png"
               alt=""
@@ -214,7 +223,7 @@
           </div>
           <div class="flex flex-col flex-1 gap-10">
             <h2
-              class="lg:text-5xl md:text-5xl text-4xl font-semibold lg:text-start md:text-start text-center lg:px-0 md:px-0 px-4 max-w-lg"
+              class="lg:text-5xl md:text-5xl text-4xl font-semibold lg:text-start md:text-start text-center lg:px-0 md:px-0 px-4 max-w-lg lg:pr-24"
             >
               THE FINEST
               <div class="inline-block">
@@ -277,19 +286,21 @@
         <div class="lg:flex md:flex hidden py-2">
           <span
             id="right-arrow "
-            class="text-2xl ml-10 cursor-pointer bg-white border-2 border-black flex px-6 py-1 transition ease-in-out duration-500"
+            class="text-2xl ml-20 cursor-pointer bg-white border-2 border-black flex px-6 py-1 transition ease-in-out duration-500"
             onclick="scrollRight()"
-            >swipe →
+            > →
           </span>
         </div>
 
         <!-- Scroller container -->
+        
+
         <div
           class="overflow-x-auto whitespace-nowrap my-0 px-10 py-4 relative lg:mt-0 md:mt-0 mt-10"
           id="scroller"
         >
           <div 
-            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden  bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
           >
             <img
               src="./Images/pizza3.png"
@@ -317,7 +328,7 @@
           </div>
 
           <div
-            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
           >
             <img
               src="./Images/pizza2.png"
@@ -345,7 +356,7 @@
           </div>
 
           <div
-            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
           >
             <img
               src="./Images/pizza1.png"
@@ -373,7 +384,7 @@
           </div>
 
           <div
-            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
           >
             <img
               src="./Images/pizza3.png"
@@ -401,7 +412,7 @@
           </div>
 
           <div
-            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
           >
             <img
               src="./Images/pizza2.png"
@@ -429,7 +440,7 @@
           </div>
 
           <div
-            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden  bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
           >
             <img
               src="./Images/pizza1.png"
@@ -457,7 +468,7 @@
           </div>
 
           <div
-            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
           >
             <img
               src="./Images/pizza3.png"
@@ -485,7 +496,7 @@
           </div>
 
           <div
-            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-4"
+            class="card inline-block align-top whitespace-normal mr-8 overflow-hidden  bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-4"
           >
             <img
               src="./Images/pizza2.png"
@@ -573,7 +584,7 @@
                 >Sandwiches</span
               >
               <span
-                class="font-semibold text-6xl"
+                class="font-semibold text-6xl  mr-4"
                 style="
                   -webkit-text-stroke: 2px rgb(77, 57, 42);
                   color: rgb(91, 74, 61);
@@ -627,9 +638,9 @@
         <div class="flex py-4 lg:flex md:flex hidden">
           <span
             id="right-arrow"
-            class="text-2xl ml-10 cursor-pointer flex bg-white border-2 border-black flex px-6 py-1"
+            class="text-2xl ml-20 cursor-pointer flex bg-white border-2 border-black flex px-6 py-1"
             onclick="scrollRight2()"
-            >swipe →
+            > →
           </span>
         </div>
 
@@ -639,7 +650,7 @@
           id="scroller2"
         >
           <div
-            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
           >
             <img
               src="./Images/S1.jpg"
@@ -666,7 +677,7 @@
           </div>
 
           <div
-            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
           >
             <img
               src="https://www.shutterstock.com/image-photo/perfect-hamburger-classic-burger-american-600nw-314203595.jpg"
@@ -693,7 +704,7 @@
           </div>
 
           <div
-            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
           >
             <img
               src="https://img.freepik.com/premium-photo/veggie-burger-with-white-background-high-quality-ul_889056-17615.jpg"
@@ -720,7 +731,7 @@
           </div>
 
           <div
-            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
           >
             <img
               src="https://as1.ftcdn.net/v2/jpg/06/14/24/08/1000_F_614240849_2Asj9iswXGH2bAMTcubXG3kK8JY6KuTX.jpg"
@@ -747,7 +758,7 @@
           </div>
 
           <div
-            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
           >
             <img
               src="https://img.freepik.com/premium-photo/healthy-chicken-shawarma-white-background_1005327-674.jpg"
@@ -774,7 +785,7 @@
           </div>
 
           <div
-            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
           >
             <img
               src="https://static.vecteezy.com/system/resources/thumbnails/033/502/552/small_2x/a-delicious-burito-in-isolated-white-background-ai-generative-photo.jpg"
@@ -801,7 +812,7 @@
           </div>
 
           <div
-            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-8"
           >
             <img
               src="https://as2.ftcdn.net/v2/jpg/02/40/94/21/1000_F_240942173_udFeGFE8kWgkDuNeRG2YkzM5m7mUfwZP.jpg"
@@ -828,7 +839,7 @@
           </div>
 
           <div
-            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden shadow-md bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-4"
+            class="card2 inline-block align-top whitespace-normal mr-8 overflow-hidden bg-transparent text-center py-4 bg-white border-2 border-zinc-300 px-4"
           >
             <img
               src="https://s3.envato.com/files/479608824/01%20(111).jpg"
@@ -855,6 +866,8 @@
           </div>
         </div>
 
+        
+          
         <!-- Menu section ended -->
       </div>
 
@@ -864,12 +877,13 @@
   
           <div class="flex justify-center items pt-8 text-center">
             <h3 class="lg:text-8xl md:text-8xl text-7xl font-bold text-black drop-shadow-2xl pb-8">Contact Us 🇮🇹</h3>
+            
           </div>
   
           <div class="flex lg:flex-row md:flex-row flex-col items-center py-4 lg:gap-20 md:gap-20  h-full px-4 justify-center ">
             <div class="flex items-center flex-col ">
               <h4 class="lg:text-4xl text-3xl text-black mr-auto font-bold">Order your food now!</h4>
-              <p class="max-w-96 lg:py-8 md:py-8 py-4 text-black lg:text-xl text-lg font-semibold "> What are you waiting for? Your meal is ready for you! </p>
+              <p class="max-w-96 lg:py-8 md:py-8 py-4 text-black lg:text-xl text-lg font-semibold text-center"> What are you waiting for? Your meal is ready for you! </p>
               <div class="flex flex-col mr-auto gap-2  ">
                <div class="flex flex-row items-center gap-6">
                   <div class="flex h-16 w-16 rounded-full bg-green-500 shadow-2xl justify-center items-center hover:bg-green-300 transition ease-in-out duration-500 cursor-pointer border-2 border-black ">
