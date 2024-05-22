@@ -86,3 +86,17 @@
       }
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#dish-photo {
+  animation: rotate 15s linear infinite;
+}
+
+

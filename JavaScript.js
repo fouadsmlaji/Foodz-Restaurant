@@ -7,6 +7,10 @@ document.getElementById("nav-toggle").onclick = function () {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 
+
+
+
+  /*
   function rotateDishPhotosOnScroll() {
     const dishPhotos = document.querySelectorAll("#dish-photo");
 
@@ -21,6 +25,7 @@ document.getElementById("nav-toggle").onclick = function () {
   window.onscroll = function () {
     rotateDishPhotosOnScroll();
   };
+  */
 
   var swiper = new Swiper(".swiper-container", {
     slidesPerView: 1,
