@@ -10,7 +10,7 @@ document.getElementById("nav-toggle").onclick = function () {
 
   let defaultTransform = 0;
   function goNext() {
-      defaultTransform = defaultTransform - 320;
+      defaultTransform = defaultTransform - 380;
       var slider = document.getElementById("slider");
       if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7) defaultTransform = 0;
       slider.style.transform = "translateX(" + defaultTransform + "px)";
@@ -19,7 +19,7 @@ document.getElementById("nav-toggle").onclick = function () {
   function goPrev() {
       var slider = document.getElementById("slider");
       if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
-      else defaultTransform = defaultTransform + 320;
+      else defaultTransform = defaultTransform + 380;
       slider.style.transform = "translateX(" + defaultTransform + "px)";
   }
   prev.addEventListener("click", goPrev)
@@ -27,7 +27,7 @@ document.getElementById("nav-toggle").onclick = function () {
 
   let defaultTransform2 = 0;
   function goNext2() {
-      defaultTransform2 = defaultTransform2 - 320;
+      defaultTransform2 = defaultTransform2 - 380;
       var slider = document.getElementById("slider2");
       if (Math.abs(defaultTransform2) >= slider.scrollWidth / 1.7) defaultTransform2 = 0;
       slider.style.transform = "translateX(" + defaultTransform2 + "px)";
@@ -37,7 +37,7 @@ document.getElementById("nav-toggle").onclick = function () {
   function goPrev2() {
       var slider = document.getElementById("slider2");
       if (Math.abs(defaultTransform2) === 0) defaultTransform2 = 0;
-      else defaultTransform2 = defaultTransform2 + 320;
+      else defaultTransform2 = defaultTransform2 + 380;
       slider.style.transform = "translateX(" + defaultTransform2 + "px)";
   }
   prev2.addEventListener("click", goPrev2)
