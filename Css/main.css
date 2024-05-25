@@ -28,23 +28,7 @@
     background-size: contain;
 }
 
-.swiper-slide {
-    flex-shrink: 0; /* Ensure swiper slides do not shrink */
-      width: 280px; /* Set width of each swiper slide */
-      border: 2px solid #e5e7eb;
-      border-radius: 8px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-   
-  }
 
-  .swiper-container {
-    width: 100%;
-    padding: 20px;
-  }
 
   #scroller, #scroller2{
     background-color: rgba(228, 228, 228, 0.5);
