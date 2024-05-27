@@ -71,16 +71,28 @@
 }
 
 @keyframes rotate {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+ 
+  30% {
+    transform: rotate(120deg);
+  }
+
+ 
+ 
+  60% {
+    transform: rotate(240deg);
+  }
+ 
+
+
+  100% {
     transform: rotate(360deg);
   }
 }
 
 #dish-photo {
-  animation: rotate 15s linear infinite;
+  animation: rotate 8s steps(4) infinite;
 }
-
 
