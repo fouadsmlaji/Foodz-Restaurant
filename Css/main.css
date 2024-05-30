@@ -8,19 +8,29 @@
     background-image: url('../Images/bg2.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+    
 }
+
 
 .res-img-div{
     height: 550px;
 }
 
-.res-img, .card{
-    border-radius: 70px 0 70px 0;
+.res-img{
+  border-radius:  70px 0 70px 0;
+}
+
+.card{
+    border-radius:  70px 0px 70px 70px;
     
 }
 
-.small-div, .card2{
-    border-radius: 0 70px 0 70px ;
+.small-div{
+  border-radius: 0 70px 0 70px ;
+}
+
+.card2{
+    border-radius: 0  70px 70px 70px ;
 }
 
 .Menu{
