@@ -20,7 +20,8 @@
   border-radius:  70px 0 70px 0;
 }
 
-.card{
+.card,
+.product-card{
     border-radius:  70px 0px 70px 70px;
     
 }
@@ -106,3 +107,15 @@
   animation: rotate 7s steps(4) infinite;
 }
 
+
+.product-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Ensure product cards stay inline */
+.product-card {
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal; /* Reset to allow text wrapping */
+}
