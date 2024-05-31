@@ -30,7 +30,8 @@
   border-radius: 0 70px 0 70px ;
 }
 
-.card2{
+.card2,
+.product-card2{
     border-radius: 0  70px 70px 70px ;
 }
 
@@ -112,7 +113,8 @@
 }
 
 /* Ensure product cards stay inline */
-.product-card {
+.product-card,
+.product-card2 {
   display: inline-block;
   vertical-align: top;
   white-space: normal; /* Reset to allow text wrapping */
