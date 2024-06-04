@@ -90,15 +90,6 @@
               <li>
                 <button
                   href="#"
-                  class="block py-2 px-6 text-gray-900 md:p-0 border-2 border-white hover:border-b-red-500 transition ease-in-out duration-500"
-                  onclick="scrollfunction('pizza')"
-                >
-                  Italian
-                </button>
-              </li>
-              <li>
-                <button
-                  href="#"
                   class="block py-2 px-6 text-gray-900 md:p-0 border-2 border-white hover:border-b-green-500 transition ease-in-out duration-500"
                   onclick="scrollfunction('contact')"
                 >
@@ -141,7 +132,7 @@
             id="my-img"
           />
           <div
-            class="plate md:flex hidden rounded-full h-40 w-40 absolute mr-80 bottom-4 shadow-2xl shadow-black"
+            class="plate lg:hidden flex rounded-full h-40 w-40 absolute mr-80 bottom-4 shadow-2xl shadow-black md:ml-0 ml-32  "
           >
             <img
               src="./Images/pizza2.png"
@@ -211,78 +202,9 @@
 
       <!-- Menu section -->
       <div id="Menu" class="Menu flex flex-col bg-gray-100 justify-center w-full h-full">
-        <div
-          class="flex lg:flex-row md:flex-row flex-col justify-between items-center w-full py-20 lg:gap-0 md:gap-0 gap-10"
-        >
-          <div class="main-dish flex flex-1 justify-center lg:pr-40">
-            <img
-              src="./Images/pizza1.png"
-              alt=""
-              class="lg:h-96 md:h-96 h-80"
-            />
-          </div>
-          <div class="flex flex-col flex-1 gap-10">
-            <h2
-              class="lg:text-5xl md:text-5xl text-4xl font-semibold lg:text-start md:text-start text-center lg:px-0 md:px-0 px-4 max-w-lg lg:pr-24"
-            >
-              THE FINEST
-              <div class="inline-block">
-                <ul class="flex  ">
-                  <li
-                    class="lg:text-5xl md:text-5xl text-4xl text-green-500 font-semibold"
-                    style="-webkit-text-stroke: 2px rgb(0, 0, 0)"
-                  >
-                    P
-                  </li>
-                  <li
-                    class="lg:text-5xl md:text-5xl text-4xl text-green-500 font-semibold"
-                    style="-webkit-text-stroke: 2px rgb(0, 0, 0)"
-                  >
-                    I
-                  </li>
-                  <li
-                    class="lg:text-5xl md:text-5xl text-4xl text-white font-semibold drop-shadow-2xl"
-                    style="-webkit-text-stroke: 2px rgb(0, 0, 0)"
-                  >
-                    Z
-                  </li>
-                  <li
-                    class="lg:text-5xl md:text-5xl text-4xl text-red-500 font-semibold"
-                    style="-webkit-text-stroke: 2px rgb(0, 0, 0)"
-                  >
-                    Z
-                  </li>
-                  <li
-                    class="lg:text-5xl md:text-5xl text-4xl text-red-500 font-semibold"
-                    style="-webkit-text-stroke: 2px rgb(0, 0, 0)"
-                  >
-                    A
-                  </li>
-                </ul>
-              </div>
-              YOU WILL EVER TASTE
-            </h2>
-
-            <p
-              class="max-w-md lg:text-start md:text-start text-center lg:mx-0 mx-auto px-2 lg:px-0 md:px-0"
-            >
-              <span class="lg:bg-transparent md:bg-transparent bg-white"
-                >Enjoy authentic wood-fired pizzas made with the freshest ingredients. Every slice is crafted with love and tradition.</span
-              >
-            </p>
-            <div class="flex lg:mx-0 md:mx-0 mx-auto">
-              <button
-              onclick="scrollfunction('contact')"
-                class="justify-center items-center bg-green-500 text-black px-6 py-2 border-2 border-green-700 hover:bg-green-300 hover:border-black hover:text-black transition ease-in-out duration-500"
-              >
-                Order now
-              </button>
-            </div>
-          </div>
-        </div>
-
+        
         <!-- scroller -->
-        <div class="lg:flex items-center justify-center w-full h-full py-24 sm:py-8 px-12 hidden">
+        <div class="lg:flex items-center justify-center w-full h-full py-24 sm:py-8 px-12 hidden lg:mt-20">
           <div class="w-full relative flex items-center justify-center">
               <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
                   <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -298,7 +220,7 @@
                           <img
                             src="./Images/pizza3.png"
                             alt=""
-                            class="mx-auto w-48 h-48 object-cover rounded-lg"
+                            class="mx-auto w-48 h-48 object-cover rounded-lg" id="dish-rotate"
                            
                           />
                           <div class="p-6 w-48">
@@ -327,7 +249,7 @@
                               <img
                               src="./Images/pizza2.png"
                               alt=""
-                              class="mx-auto w-48 h-48 object-cover rounded-lg"
+                              class="mx-auto w-48 h-48 object-cover rounded-lg" id="dish-rotate"
                               
                               />
                               <div class="p-6 w-48">
@@ -357,7 +279,7 @@
                           <img
                             src="./Images/pizza1.png"
                             alt=""
-                            class="mx-auto w-48 h-48 object-cover rounded-lg"
+                            class="mx-auto w-48 h-48 object-cover rounded-lg" id="dish-rotate"
                             
                           />
                           <div class="p-6 w-48">
@@ -386,7 +308,7 @@
                           <img
                             src="./Images/pizza3.png"
                             alt=""
-                            class="mx-auto w-48 h-48 object-cover rounded-lg"
+                            class="mx-auto w-48 h-48 object-cover rounded-lg" id="dish-rotate"
                            
                           />
                           <div class="p-6 w-48">
@@ -415,7 +337,7 @@
                               <img
                               src="./Images/pizza2.png"
                               alt=""
-                              class="mx-auto w-48 h-48 object-cover rounded-lg"
+                              class="mx-auto w-48 h-48 object-cover rounded-lg" id="dish-rotate"
                              
                               />
                               <div class="p-6 w-48">
@@ -444,7 +366,7 @@
                           <img
                             src="./Images/pizza1.png"
                             alt=""
-                            class="mx-auto w-48 h-48 object-cover rounded-lg"
+                            class="mx-auto w-48 h-48 object-cover rounded-lg" id="dish-rotate"
                            
                           />
                           <div class="p-6 w-48">
@@ -473,7 +395,7 @@
                               <img
                               src="./Images/pizza3.png"
                               alt=""
-                              class="mx-auto w-48 h-48 object-cover rounded-lg"
+                              class="mx-auto w-48 h-48 object-cover rounded-lg" id="dish-rotate"
                               
                               />
                               <div class="p-6 w-48">
@@ -502,7 +424,7 @@
                               <img
                               src="./Images/pizza2.png"
                               alt=""
-                              class="mx-auto w-48 h-48 object-cover rounded-lg"
+                              class="mx-auto w-48 h-48 object-cover rounded-lg" id="dish-rotate"
                               
                               />
                               <div class="p-6 w-48">
@@ -531,7 +453,7 @@
                         <img
                           src="./Images/pizza1.png"
                           alt=""
-                          class="mx-auto w-48 h-48 object-cover rounded-lg"
+                          class="mx-auto w-48 h-48 object-cover rounded-lg" id="dish-rotate"
                           
                         />
                         <div class="p-6 w-48">
@@ -560,7 +482,7 @@
                           <img
                           src="./Images/pizza3.png"
                           alt=""
-                          class="mx-auto w-48 h-48 object-cover rounded-lg"
+                          class="mx-auto w-48 h-48 object-cover rounded-lg" id="dish-rotate"
                           
                           />
                           <div class="p-6 w-48">
@@ -596,7 +518,7 @@
       <div class="product-container px-12 py-4 lg:hidden">
         <!-- Carousel Product 1 -->
         <div class=" no-dark-mode product-card px-8 mr-6 overflow-hidden text-center relative h-96 border-2 border-zinc-300 bg-white">
-            <img src="./Images/pizza3.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6">
+            <img src="./Images/pizza3.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6" id="dish-rotate">
             <div class="p-6 w-48">
                 <h3 class="text-lg md:text-xl font-bold mb-2 text-center">Margherita</h3>
                 <p class="text-sm md:text-base text-gray-600 text-center">Italian Pizza</p>
@@ -605,7 +527,7 @@
         </div>
         <!-- Carousel Product 2 -->
         <div class="no-dark-mode product-card px-8 mr-6 overflow-hidden text-center relative h-96 border-2 border-zinc-300 bg-white">
-            <img src="./Images/pizza2.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6">
+            <img src="./Images/pizza2.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6" id="dish-rotate">
             <div class="p-6 w-48">
                 <h3 class="text-lg md:text-xl font-bold mb-2 text-center">Marinara</h3>
                 <p class="text-sm md:text-base text-gray-600 text-center">Italian Pizza</p>
@@ -614,7 +536,7 @@
         </div>      
          <!-- Carousel Product 3 -->
          <div class="no-dark-mode product-card px-8 mr-6 overflow-hidden text-center relative h-96 border-2 border-zinc-300 bg-white">
-            <img src="./Images/pizza1.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6">
+            <img src="./Images/pizza1.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6" id="dish-rotate">
             <div class="p-6 w-48">
                 <h3 class="text-lg md:text-xl font-bold mb-2 text-center">Diavola</h3>
                 <p class="text-sm md:text-base text-gray-600 text-center">Italian Pizza</p>
@@ -624,7 +546,7 @@
           <!-- Carousel Product 4 -->
           <div class="no-dark-mode product-card px-8 mr-6 overflow-hidden text-center relative h-96 border-2 border-zinc-300 bg-white">
            
-            <img src="./Images/pizza3.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6">
+            <img src="./Images/pizza3.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6" id="dish-rotate">
             <div class="p-6 w-48">
                 <h3 class="text-lg md:text-xl font-bold mb-2 text-center">Napolitana</h3>
                 <p class="text-sm md:text-base text-gray-600 text-center">Italian Pizza</p>
@@ -633,7 +555,7 @@
         </div>
       <!-- Carousel Product 5 -->
       <div class="no-dark-mode product-card px-8 mr-6 overflow-hidden text-center relative h-96 border-2 border-zinc-300 bg-white">
-        <img src="./Images/pizza2.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6">
+        <img src="./Images/pizza2.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6" id="dish-rotate">
         <div class="p-6 w-48">
             <h3 class="text-lg md:text-xl font-bold mb-2 text-center">Margherita</h3>
             <p class="text-sm md:text-base text-gray-600 text-center">Italian Pizza</p>
@@ -642,7 +564,7 @@
     </div>    
        <!-- Carousel Product 6 -->
        <div class="no-dark-mode product-card px-8 mr-6 overflow-hidden text-center relative h-96 border-2 border-zinc-300 bg-white">
-        <img src="./Images/pizza1.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6">
+        <img src="./Images/pizza1.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6" id="dish-rotate">
         <div class="p-6 w-48">
             <h3 class="text-lg md:text-xl font-bold mb-2 text-center">Ortolana</h3>
             <p class="text-sm md:text-base text-gray-600 text-center">Italian Pizza</p>
@@ -652,7 +574,7 @@
        <!-- Carousel Product 7 -->
        <div class="no-dark-mode product-card px-8 mr-6 overflow-hidden text-center relative h-96 border-2 border-zinc-300 bg-white">
      
-        <img src="./Images/pizza3.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6">
+        <img src="./Images/pizza3.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6" id="dish-rotate">
         <div class="p-6 w-48">
             <h3 class="text-lg md:text-xl font-bold mb-2 text-center">Boscaiola</h3>
             <p class="text-sm md:text-base text-gray-600 text-center">Italian Pizza</p>
@@ -662,7 +584,7 @@
        <!-- Carousel Product 8 -->
        <div class="no-dark-mode product-card px-8 mr-6 overflow-hidden text-center relative h-96 border-2 border-zinc-300 bg-white">
 
-        <img src="./Images/pizza2.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6">
+        <img src="./Images/pizza2.png" alt="Product 1" class="mx-auto w-48 h-48 object-cover rounded-lg mt-6" id="dish-rotate">
         <div class="p-6 w-48">
             <h3 class="text-lg md:text-xl font-bold mb-2 text-center">Capricciosa</h3>
             <p class="text-sm md:text-base text-gray-600 text-center">Italian Pizza</p>
@@ -697,7 +619,7 @@
                 >Sandwiches</span
               >
               <span
-                class="font-semibold text-6xl"
+                class="font-semibold text-6xl mr-4"
                 style="
                   -webkit-text-stroke: 2px rgb(77, 57, 42);
                   color: rgb(91, 74, 61);
@@ -1194,29 +1116,101 @@
             <p class="text-sm md:text-base text-gray-600 text-center">Sandwich</p>
             <p class="text-sm md:text-base text-gray-600 text-center">$8.90</p>
         </div>
-       </div>                                                                             
+       </div>     
+       
+       
                             
   </div>
+
+        <div
+        class="flex lg:flex-row md:flex-row flex-col justify-between items-center w-full py-20 lg:gap-0 md:gap-0 gap-10 "
+      >
+        <div class="main-dish flex flex-1 justify-center lg:pr-40">
+          <img
+            src="./Images/pizza1.png"
+            alt=""
+            class="lg:h-96 md:h-96 h-80"
+          />
+        </div>
+        <div class="flex flex-col flex-1 gap-10">
+          <h2
+            class="lg:text-5xl md:text-5xl text-4xl font-semibold lg:text-start md:text-start text-center lg:px-0 md:px-0 px-4 max-w-xl lg:pr-24"
+          >
+            Your
+            <div class="inline-block">
+              <ul class="flex  ">
+                <li
+                  class="lg:text-5xl md:text-5xl text-4xl text-green-500 font-semibold"
+                  style="-webkit-text-stroke: 2px rgb(0, 0, 0)"
+                >
+                  P
+                </li>
+                <li
+                  class="lg:text-5xl md:text-5xl text-4xl text-green-500 font-semibold"
+                  style="-webkit-text-stroke: 2px rgb(0, 0, 0)"
+                >
+                  i
+                </li>
+                <li
+                  class="lg:text-5xl md:text-5xl text-4xl text-white font-semibold drop-shadow-2xl"
+                  style="-webkit-text-stroke: 2px rgb(0, 0, 0)"
+                >
+                  z
+                </li>
+                <li
+                  class="lg:text-5xl md:text-5xl text-4xl text-red-500 font-semibold"
+                  style="-webkit-text-stroke: 2px rgb(0, 0, 0)"
+                >
+                  z
+                </li>
+                <li
+                  class="lg:text-5xl md:text-5xl text-4xl text-red-500 font-semibold"
+                  style="-webkit-text-stroke: 2px rgb(0, 0, 0)"
+                >
+                  a
+                </li>
+              </ul>
+            </div>
+            Doesn't Taste Like Pizza?
+          </h2>
+
+          <p
+            class="max-w-md lg:text-start md:text-start text-center lg:mx-0 mx-auto px-2 lg:px-0 md:px-0"
+          >
+            <span class="lg:bg-transparent md:bg-transparent bg-white"
+              >Enjoy our authentic wood-fired pizzas made with the freshest ingredients. Every slice is crafted with love and tradition.</span
+            >
+          </p>
+          <div class="flex lg:mx-0 md:mx-0 mx-auto">
+            <button
+            onclick="scrollfunction('contact')"
+              class="justify-center items-center bg-green-500 text-black px-6 py-2 border-2 border-green-700 hover:bg-green-300 hover:border-black hover:text-black transition ease-in-out duration-500"
+            >
+              Order now
+            </button>
+          </div>
+        </div>
+      </div>
         
           
         <!-- Menu section ended -->
       </div>
 
       <!-- contact Us -->
-      <div class="container3 flex h-full  justify-center mt-28 " id="contact" >
-        <div class="burger flex flex-col w-full  h-full pt-12 lg:pl-40 " style=" height: 700px; background-image: url('/Images/italy3.jpg'); background-size: cover;">
+      <div class="container3 flex h-full  justify-center mt-20 " id="contact" >
+        <div class="burger flex flex-col w-full  h-full pt-12 lg:pl-36 " style=" height: 700px; background-image: url('/Images/italy3.jpg'); background-size: cover;">
   
-          <div class="flex lg:justify-start justify-center items pt-8 text-center">
-            <h3 class="lg:text-8xl md:text-8xl text-6xl font-bold text-black drop-shadow-2xl pb-8">Contact Us </h3>
+          <div class="flex lg:justify-start justify-center items pt-8 ">
+            <h3 class="lg:text-8xl md:text-8xl text-6xl font-bold text-black drop-shadow-2xl pb-8 lg:pl-2">Contact Us </h3>
             
           </div>
   
           <div class="flex lg:flex-row md:flex-row flex-col items-center py-4 lg:gap-20 md:gap-20  h-full px-4 lg:justify-start justify-center ">
             <div class="flex items-center flex-col ">
-              <h4 class="lg:text-4xl text-3xl text-black  font-bold">Order your food now!</h4>
-              <p class="max-w-96 lg:py-8 md:py-8 py-4 text-black lg:text-xl text-lg font-semibold lg:text-start text-center"> What are you waiting for? Your meal is ready for you! </p>
+              <h4 class="lg:text-4xl text-3xl text-black font-bold">Order your food now!</h4>
+              <p class="max-w-96 lg:py-8 md:py-8 py-4 text-black lg:text-xl text-lg font-semibold lg:text-start lg:pl-0 md:pl-0 pl-4"> What are you waiting for? Your meal is ready for you! </p>
               <div class="flex flex-col mr-auto gap-2  ">
-                <div class="flex flex-row items-center gap-6">
+                <div class="flex flex-row items-center gap-6 lg:pl-0 md:pl-0 pl-2">
                   <a href="tel:+3923420349" class="flex h-16 w-16 rounded-full bg-green-500 shadow-2xl justify-center items-center hover:bg-green-300 transition ease-in-out duration-500 cursor-pointer border-2 border-black">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24">
                       <path stroke="none" d="M0 0h24v24H0z"/>
@@ -1225,7 +1219,7 @@
                   </a>
                   <p class="text-lg text-black font-semibold">+39 23420349</p>
                 </div>
-               <div class="flex flex-row items-center gap-6">
+               <div class="flex flex-row items-center gap-6 lg:pl-0 md:pl-0 pl-2">
                 <a href="mailto:Fouad.smlaji66@gmail.com" class="flex h-16 w-16 rounded-full bg-white shadow-2xl justify-center items-center hover:bg-zinc-200 transition ease-in-out duration-500 cursor-pointer border-2 border-black">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="icon icon-tabler icon-tabler-mail" viewBox="0 0 24 24">
                     <path stroke="none" d="M0 0h24v24H0z"/>
@@ -1237,7 +1231,7 @@
               </div>
               
               <a href="https://www.google.com/maps/place/Milano,+Italy" target="_blank" class="block">
-                <div class="flex flex-row items-center gap-6">
+                <div class="flex flex-row items-center gap-6 lg:pl-0 md:pl-0 pl-2">
                   <div class="flex h-16 w-16 rounded-full bg-red-500 shadow-2xl justify-center items-center hover:bg-red-300 transition ease-in-out duration-500 cursor-pointer border-2 border-black">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="icon icon-tabler icon-tabler-current-location" viewBox="0 0 24 24">
                       <path stroke="none" d="M0 0h24v24H0z"/>
@@ -1255,7 +1249,7 @@
           
         </div>
   
-        <div class="flex lg:flex-row flex-col justify-center lg:h-28 lg:gap-80 gap-6 pb-2  ">
+        <div class="flex lg:flex-row flex-col justify-center lg:h-28 lg:gap-80 gap-6 pb-4  ">
           
   
           <div class="flex justify-center items-center lg:pl-8">

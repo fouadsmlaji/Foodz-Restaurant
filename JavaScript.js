@@ -42,9 +42,9 @@ document.getElementById("nav-toggle").onclick = function () {
   }
   prev2.addEventListener("click", goPrev2)
 
-  /*
+
   function rotateDishPhotosOnScroll() {
-    const dishPhotos = document.querySelectorAll("#dish-photo");
+    const dishPhotos = document.querySelectorAll("#dish-rotate");
 
     dishPhotos.forEach((dishPhoto) => {
       const scrollY = window.scrollY || window.pageYOffset;
@@ -57,5 +57,5 @@ document.getElementById("nav-toggle").onclick = function () {
   window.onscroll = function () {
     rotateDishPhotosOnScroll();
   };
-  */
+
 
